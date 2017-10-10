@@ -1,10 +1,10 @@
 #include "Header.h"
-using namespace std;
 
 
-void BubbleSort(int* values, int count)
+
+void BubbleSort(int* values)
 {
-	cout << "Bubble sort \n";
+	int count = sizeof(values) / sizeof(values[0]);
 
 	bool not_sorted = true;
 	int temp = 0;//временная переменная для хранения сортируемого элемента

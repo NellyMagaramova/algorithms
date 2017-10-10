@@ -1,8 +1,8 @@
 #include "Header.h"
 
-void SelectionSort(int* values, int count)
+void SelectionSort(int* values)
 {
-	cout << "Selection sort \n";
+	int count = sizeof(values) / sizeof(values[0]);
 	
 	int AddVar = 0;//временная переменная для хранения сортируемого элемента
 	for (int i = 0; i < count - 1; i++)

@@ -1,10 +1,11 @@
 #include "Header.h"
-using namespace std;
+
+
 
 
 void InsertionSort(int* values, int count)
 {
-	cout << "Insertion sort \n";
+	int count = sizeof(values) / sizeof(values[0]);
 	int temp = 0;//временная переменная для хранения сортируемого элемента
 	int j = 0;
 

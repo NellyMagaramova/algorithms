@@ -1,6 +1,7 @@
+#include "Header.h"
 void QuickSort(int* values, int start, int end)
 {
-	cout << "Quick sort \n";
+	
 	//если в массиве не более одного элемента, значит он отсортирован
 	if (start >= end)
 	{
