@@ -19,11 +19,11 @@ int main(int argc, char* argv[]) {
 	//потому что массив будет уже отсортирован
 	//и поэтому вызываем функции поотдельности
 
-	//SelectionSort(a, N);
+	//SelectionSort(a);
 	
-	//BubbleSort(a, N);
+	//BubbleSort(a);
 
-	//InsertionSort(a, N);
+	//InsertionSort(a);
 
 	QuickSort(a, 0, N-1);
 
@@ -32,10 +32,11 @@ int main(int argc, char* argv[]) {
 
 	}
 	cout << "\n";
-	cout << "\n max element " << max(a,N);
+	cout << "\n max element " << max(a);
 	 
-	cout << "\n min element " << min(a, N);
+	cout << "\n min element " << min(a);
 	cout << "\n";
+	delete[] a;
 	system("pause");
 	return 0;
 }
