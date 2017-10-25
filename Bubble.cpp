@@ -2,9 +2,9 @@
 
 
 
-void BubbleSort(int* values)
+void BubbleSort(int* values, int count)
 {
-	int count = sizeof(values) / sizeof(values[0]);
+	
 
 	bool not_sorted = true;
 	int temp = 0;//временная переменная для хранения сортируемого элемента

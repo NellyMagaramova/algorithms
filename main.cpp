@@ -19,23 +19,28 @@ int main(int argc, char* argv[]) {
 	//потому что массив будет уже отсортирован
 	//и поэтому вызываем функции поотдельности
 
-	//SelectionSort(a);
+	//SelectionSort(a,N);
 	
-	//BubbleSort(a);
+	//BubbleSort(a,N);
 
-	//InsertionSort(a);
+	InsertionSort(a,N);
 
-	QuickSort(a, 0, N-1);
+	//QuickSort(a, 0, N-1);
+
 
 	for (int i = 0; i < N; i++) {
 		cout << a[i];
 
 	}
 	cout << "\n";
-	cout << "\n max element " << max(a);
+	cout << "\n max element " << max(a,N);
 	 
-	cout << "\n min element " << min(a);
+	cout << "\n min element " << min(a,N);
 	cout << "\n";
+
+	cout << "\n Median" <<FindMedian(a,N);
+	cout << "\n";
+
 	delete[] a;
 	system("pause");
 	return 0;

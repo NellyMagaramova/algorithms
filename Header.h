@@ -2,9 +2,10 @@
 #include <iostream>
 using namespace std;
 
-void SelectionSort(int* values);
-void BubbleSort(int* values);
-void InsertionSort(int* values);
+void SelectionSort(int* values, int count);
+void BubbleSort(int* values, int count);
+void InsertionSort(int* values, int count);
 void QuickSort(int* values, int start, int end);
-int max(int* values);
-int min(int* values);
+int max(int* values, int count);
+int min(int* values, int count);
+int FindMedian(int* values, int count);

@@ -2,17 +2,14 @@
 
 
 
-
 void InsertionSort(int* values, int count)
 {
-	int count = sizeof(values) / sizeof(values[0]);
+	
 	int temp = 0;//временная переменная для хранения сортируемого элемента
 	int j = 0;
 
 
-
-
-	for (int i = 0; i < count - 1; i++) {
+	for (int i = 0; i < count; i++) {
 
 		temp = values[i];
 		j = i - 1;
